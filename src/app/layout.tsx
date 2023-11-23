@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 import type { Metadata } from 'next';
 import { Poppins, Lobster } from 'next/font/google';
 import './globals.css';
@@ -27,6 +29,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${poppins.variable} ${lobster.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
