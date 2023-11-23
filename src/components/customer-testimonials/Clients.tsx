@@ -23,6 +23,14 @@ const Clients = async () => {
               index === 1 ? 'bg-accent-foreground' : 'bg-primary-foreground',
             textColor:
               index === 1 ? 'text-primary-text' : 'text-secondary-text',
+            orientation:
+              customers.length % 2 !== 0 &&
+              index === customers.length - 1 &&
+              customers.length >= 3
+                ? 'col-span-full xl:col-span-1 mx-auto'
+                : customers.length % 2 == 0 && index === customers.length - 1
+                ? 'col-span-1 xl:col-span-full sm:mx-auto'
+                : '',
           }}
         />
       ))}

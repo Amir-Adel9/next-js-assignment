@@ -7,6 +7,7 @@ import { Star } from 'lucide-react';
 type CustomerReviewCardStyles = {
   backgroundColor: string;
   textColor: string;
+  orientation: string;
 };
 
 const CustomerReview = ({
@@ -18,7 +19,7 @@ const CustomerReview = ({
 }) => {
   return (
     <div
-      className={`${styles.backgroundColor} ${styles.textColor} relative max-w-[536px] h-[465px] text-center rounded-3xl flex flex-col justify-end items-center gap-5 p-16 duration-300 hover:-translate-y-10 `}
+      className={`${styles.backgroundColor} ${styles.textColor} ${styles.orientation} relative max-w-[536px] min-h-[465px] text-center rounded-3xl flex flex-col justify-center items-center gap-5 p-16 duration-300 hover:-translate-y-10 `}
     >
       <div className='absolute w-[144px] h-[144px] top-[-72px]'>
         <Image
@@ -30,13 +31,15 @@ const CustomerReview = ({
       </div>
 
       <div className='flex flex-col gap-2'>
-        <p className='text-xl font-extralight'>
+        <p className='text-xl font-light'>
           <Balancer>&quot; {customer.review} &quot;</Balancer>
         </p>
-        <h3 className='text-2xl font-medium'>{customer.name}</h3>
-        <h4 className='text-lg tracking-tighter font-extralight'>
-          {customer.occupation}
-        </h4>
+        <div className='flex flex-col gap-1'>
+          <h3 className='text-2xl font-medium'>{customer.name}</h3>
+          <h4 className='text-lg tracking-tighter font-extralight'>
+            {customer.occupation}
+          </h4>
+        </div>
       </div>
       <div className='flex items-center gap-1'>
         {[...Array(customer.rating)].map((_, index) => (
