@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "occupation": "Travel Blogger",
+    "photo_url": "/images/client_1.png",
+    "review": "I was looking for a unique travel experience, and I found it on Ithaka. I booked a private tour of the Pyramids with a local guide, and it was amazing! The guide was knowledgeable and passionate about Egypt.",
+    "rating": "5"
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "occupation": "Travel Blogger",
+    "photo_url": "/images/client_2.png",
+    "review": "I was looking for a unique travel experience, and I found it on Ithaka. I booked a private tour of the Pyramids with a local guide, and it was amazing! The guide was knowledgeable and passionate about Egypt.",
+    "rating": "5"
+  },
+  {
+    "id": 3,
+    "name": "John Smith",
+    "occupation": "Travel Blogger",
+    "photo_url": "/images/client_3.png",
+    "review": "I was looking for a unique travel experience, and I found it on Ithaka. I booked a private tour of the Pyramids with a local guide, and it was amazing! The guide was knowledgeable and passionate about Egypt.",
+    "rating": "5"
+  }
+]

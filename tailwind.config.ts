@@ -9,8 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['var(--font-inter)'],
+        poppins: ['var(--font-poppins)'],
         lobster: ['var(--font-lobster)'],
+      },
+      colors: {
+        'primary-background': 'var(--color-primary-background)',
+        'primary-foreground': 'var(--color-primary-foreground)',
+        'accent-foreground': 'var(--color-accent-foreground)',
+        'primary-text': 'var(--color-primary-text)',
+        'secondary-text': 'var(--color-secondary-text)',
+        'accent-text': 'var(--color-accent-text)',
       },
     },
   },
